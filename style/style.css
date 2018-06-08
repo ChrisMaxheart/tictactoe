@@ -2,3 +2,56 @@ html {
   font-family: "Montserrat";
   /*height: 100vh;*/
 }
+
+body {
+  display: grid;
+  grid-template-rows: 5fr 32fr 1fr;
+  height: 100vh;
+}
+
+.midarea {
+  display: grid;
+  grid-template-columns: 5fr 16fr 5fr;
+}
+
+.gamearea {
+  justify-content: cemter;
+  /*align-items: center;*/
+  /*align-content: center;*/
+  display: grid;
+  border: 3px solid;
+}
+
+.header {
+  text-align: center;
+  margin-top: 2%;
+  font-weight: bold;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-bottom: 0.5%;
+}
+
+.header h3 {
+  font-size: 28px;
+}
+
+button:hover {
+  background-color: #F0F8FF;
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid;
+  border-color: black;
+  background-color: white;
+  /*background-size: auto;*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(1px);
+}
