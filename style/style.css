@@ -9,6 +9,10 @@ body {
   height: 100vh;
 }
 
+body.index {
+  grid-template-rows: 2fr 1fr 4fr;
+}
+
 .midarea {
   display: grid;
   grid-template-columns: 5fr 16fr 5fr;
@@ -45,7 +49,6 @@ button:hover {
 button {
   border: 1px solid;
   border-color: black;
-  background-color: white;
   /*background-size: auto;*/
   background-repeat: no-repeat;
   background-position: center;
@@ -54,4 +57,36 @@ button {
 button:active {
   box-shadow: 0 5px #666;
   transform: translateY(1px);
+}
+
+.welcome {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  vertical-align: center;
+  line-height: 5;
+}
+
+.preference {
+  text-align: center;
+  font-size: 30px;
+}
+
+.choices button {
+  width: 100%;
+  /*margin-left: 4%;*/
+  height: 20%;
+  font-size: 30px;
+}
+
+.gamearea button {
+  background-color: white;
+}
+
+.choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1%;
+  margin-left: 4%;
+  margin-right: 4%;
 }
