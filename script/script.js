@@ -134,7 +134,11 @@ $("button").click(function() {
       alert("Player 1 Wins, you will be 'teleported' back to the main page");
       window.open('index.html', '_self');
     } else if (condition == 2) {
-      alert("Player 2 Wins, you will be 'teleported' back to the main page");
+      if (AI) {
+        alert("AI Wins, you will be 'teleported' back to the main page");
+      } else {
+        alert("Player 2 Wins, you will be 'teleported' back to the main page");
+      }
       window.open('index.html', '_self');
     } else {
       alert("Draw! You will be 'teleported' back to the main page");
